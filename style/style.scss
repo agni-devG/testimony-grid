@@ -1,0 +1,95 @@
+@import 'variables';
+@import 'global';
+
+body{
+    padding:50px 100px;
+    background: #cfcfcf38;
+}
+.container{
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    justify-content: center;
+    align-content: center;
+    font-family: $barlow;
+}
+.g-item{
+    padding: 30px 35px;
+    background-color: $Moderate-violet;
+    border-radius: 10px;
+    .profile{
+        display: flex;
+        align-items: center;
+        font-size: .9em;
+        letter-spacing: .5px;
+        img{
+            border-radius: 50%;
+            max-width: 40px;
+            border:$Moderate-violet 2px solid;
+        }
+        .bio{
+            span{display: block;}
+            margin-left: 10px;
+            .name{
+                color: white;
+                margin-bottom: 1px;
+            }
+            .occupation{font-size: .8em;}
+        }
+    }
+    .copy{
+        h3{
+            color: white;
+            font-weight: 600;
+            margin-top: 8px;
+        }
+        p{
+            color: rgba(255, 255, 255, 0.473);
+            font-size: .8em;
+        }
+    }
+}
+
+.long{
+    grid-column: span 2;
+}
+.tall{
+    grid-row: span 2;
+}
+
+.item1{
+    background: url(../images/bg-pattern-quotation.svg)no-repeat 350px top, $Moderate-violet;
+}
+.item2{
+    background: $Very-dark-grayish-blue;
+}
+.item3,.item4{
+    background: white;
+    .profile{
+        .bio{
+            .name{color: $Very-dark-blackish-blue;}
+            .occupation{color: #19212d91;}
+        }
+    }
+    .copy{
+        h3{color:#19212ed1;}
+        p{color:#19212e9e;}
+    }
+}
+.item5{
+    background: $Very-dark-blackish-blue;
+}
+
+
+@media screen and (max-width:376px) {
+    body{
+        padding: 50px 30px;
+    }
+    .container{
+        display: block;
+    }
+    .g-item{
+        margin: 20px 0;
+    }
+}

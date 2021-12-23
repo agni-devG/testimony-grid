@@ -1,0 +1,142 @@
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+.lighten {
+  color: rgba(255, 255, 255, 0.473);
+}
+
+body {
+  padding: 50px 100px;
+  background: #cfcfcf38;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 25px;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+.g-item {
+  padding: 30px 35px;
+  background-color: #7541c8;
+  border-radius: 10px;
+}
+
+.g-item .profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: .9em;
+  letter-spacing: .5px;
+}
+
+.g-item .profile img {
+  border-radius: 50%;
+  max-width: 40px;
+  border: #7541c8 2px solid;
+}
+
+.g-item .profile .bio {
+  margin-left: 10px;
+}
+
+.g-item .profile .bio span {
+  display: block;
+}
+
+.g-item .profile .bio .name {
+  color: white;
+  margin-bottom: 1px;
+}
+
+.g-item .profile .bio .occupation {
+  font-size: .8em;
+}
+
+.g-item .copy h3 {
+  color: white;
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+.g-item .copy p {
+  color: rgba(255, 255, 255, 0.473);
+  font-size: .8em;
+}
+
+.long {
+  grid-column: span 2;
+}
+
+.tall {
+  grid-row: span 2;
+}
+
+.item1 {
+  background: url(../images/bg-pattern-quotation.svg) no-repeat 350px top, #7541c8;
+}
+
+.item2 {
+  background: #48556a;
+}
+
+.item3, .item4 {
+  background: white;
+}
+
+.item3 .profile .bio .name, .item4 .profile .bio .name {
+  color: #19212e;
+}
+
+.item3 .profile .bio .occupation, .item4 .profile .bio .occupation {
+  color: #19212d91;
+}
+
+.item3 .copy h3, .item4 .copy h3 {
+  color: #19212ed1;
+}
+
+.item3 .copy p, .item4 .copy p {
+  color: #19212e9e;
+}
+
+.item5 {
+  background: #19212e;
+}
+
+@media screen and (max-width: 376px) {
+  body {
+    padding: 50px 30px;
+  }
+  .container {
+    display: block;
+  }
+  .g-item {
+    margin: 20px 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
